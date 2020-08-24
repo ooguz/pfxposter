@@ -41,7 +41,7 @@ def main():
 	get_image = requests.get(image_url)
 	tmp.write(get_image.content)
 	mastodon_media = mastodon.media_post(tmp.name)
-	#mastodon.status_post(image_name, media_ids=mastodon_media['id'])
+	mastodon.status_post(image_name, media_ids=mastodon_media['id'])
 	print("Status posted: ", image_name)
 	tmp.close()
 if __name__ == "__main__":

@@ -2,4 +2,4 @@ twine
 Mastodon.py>=1.5.1
 atoma>=0.0.17
 toml>=0.10.1
-
+python-crontab>=2.5.1
