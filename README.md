@@ -13,10 +13,10 @@ A PixelFed to Mastodon and Twitter crossposter that is not written as intended. 
 In order to post PixelFed entries to Twitter, you will need a Mastodon-Twitter crossposter, you may find them on web.
 
 ## Installation
-
 ```
-pip3 install pfxposter
+python3 -m pip install pfxposter
 ```
+Using virtual enviroment is strongly recommended, for the reason that the requests library of the distro vendor may be overrided after the installation. 
 
 ## Usage
 
