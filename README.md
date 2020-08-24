@@ -14,9 +14,9 @@ In order to post PixelFed entries to Twitter, you will need a Mastodon-Twitter c
 
 ## Installation
 ```
-python3 -m pip instal pfxposter
+python3 -m pip install pfxposter
 ```
-Use of virtual enviroments is strongly recommended, requests package may override your OS vendored version.
+Using virtual enviroment is strongly recommended, for the reason that the requests library of the distro vendor may be overrided after the installation. 
 
 ## Usage
 
