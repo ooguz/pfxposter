@@ -9,6 +9,8 @@ import requests
 import toml
 from mastodon import Mastodon
 
+homedir = os.getenv("HOME")
+config_file = "{}/.pfxposter".format(homedir)
 
 def create_config(config_file):
     conf_includes = textwrap.dedent("""
@@ -60,9 +62,6 @@ def syncronize(config_file, config, username, last_updated, mastodon):
 
 
 def main():
-    homedir = os.getenv("HOME")
-    config_file = "{}/.pfxposter".format(homedir)
-
     if not os.path.exists(config_file):
         create_config(config_file)
 
