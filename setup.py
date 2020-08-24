@@ -45,10 +45,10 @@ setup(
         "Programming Language :: Python :: Implementation :: PyPy",
         "Topic :: Internet",
     ],
-    entry_points={"console_scripts": ["pfxposter = pfxposter.pfxposter:main"]},
+    entry_points={"console_scripts": ["pfxposter = pfxposter.poster:main"]},
     data_files=[('/home/{}/.pfxposter'.format(os.getenv("USER")), ['data/config.toml'])],
     python_requires=">=3.6",
-    install_requires=['Mastodon.py>=1.5.1', 'atoma>=0.0.17', 'toml>=0.10.1', 'python-crontab>=2.5.1']
+    install_requires=['Mastodon.py>=1.5.1', 'atoma>=0.0.17', 'toml>=0.10.1', 'python-crontab>=2.5.1', 'requests']
 )  
 
 _post_install()
