@@ -45,7 +45,7 @@ From Mastodon to Twitter, you will need another cross-poster, there are some lin
 * <https://crossposter.masto.donte.com.br/>
 * <https://moa.party>
 
-**DISCLAIMER: These services listed below are neither maintained or recommended from the developer, these are listed only for general information.**
+**DISCLAIMER: These services listed below are neither maintained nor recommended from the developer, these are listed only for general information.**
 
 ## License
 
