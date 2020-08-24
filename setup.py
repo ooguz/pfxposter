@@ -1,29 +1,41 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+#!/usr/bin/env python3
 
 from setuptools import setup
 from setuptools import find_packages
-import package_name
+import os
+import pfxposter
+
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
 
 setup(
-    name='package_name',
-    version=package_name.__version__,
-    description='description_value',
-    url='url_value',
-    author='author_value',
-    author_email='email_value',
-    license='GNU General Public License v3 (GPLv3)',
+    name='pfxposter',
+    version=pfxposter.__version__,
+    description='A simple PixelFed to Mastodon/Twitter crossposter',
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url='https://github.com/ooguz/pfxposter',
+    author='Özcan Oğuz',
+    author_email='ozcan@oyd.org.tr',
+    license='GLWTS(Good Luck With That Shit) Public License',
     packages=find_packages(),
     zip_safe=False,
+    project_urls={
+        "Bug Tracker": "https://github.com/ooguz/pfxposter/issues",
+        "Source Code": "https://github.com/ooguz/pfxposter",
+    },
     classifiers=[
         "Development Status :: 4 - Beta",
-        "Environment :: Console",
+        "Environment :: No Input/Output (Daemon)",
         "Intended Audience :: Developers",
-        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+        "License :: Public Domain",
         "Operating System :: POSIX :: Linux",
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: Implementation :: PyPy",
-        "Topic :: Software Development :: Libraries :: Python Modules",
+        "Topic :: Internet",
     ],
+    data_files=[('/home/{}/.pfxposter', ['data/config.toml'])],
     python_requires=">=3.6",
-    install_requires=[''])  # Dependencies
+    install_requires=['Mastodon.py>=1.5.1', 'atoma>=0.0.17', 'toml>=0.10.1']
+)  

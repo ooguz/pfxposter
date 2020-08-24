@@ -1,0 +1,9 @@
+updated = 2020-08-24 00:00:00+00:00
+
+[mastodon]
+mastodon_url = "https://oyd.social"
+access_token = "your_access_token_here"
+
+[pixelfed]
+pixelfed_url = "https://pixelfed.social"
+username = "username"
