@@ -4,7 +4,7 @@
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pfxposter)
 ![GLWTS](https://img.shields.io/badge/license-GLWTS-success)
 ![PyPI - Status](https://img.shields.io/pypi/status/pfxposter)
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/ooguz/pfxposter/issues)
 ![PyPI - Format](https://img.shields.io/pypi/format/pfxposter)
 ![GitHub followers](https://img.shields.io/github/followers/ooguz?label=Follow&style=social)
 
