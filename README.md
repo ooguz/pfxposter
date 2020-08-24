@@ -4,9 +4,15 @@ A PixelFed to Mastodon and Twitter crossposter that is not written as intended. 
 
 In order to post PixelFed entries to Twitter, you will need a Mastodon-Twitter crossposter, you may find them on web.
 
+## Installation
+
+`pip3 install pfxposter`
+
 ## Usage
 
-There is a configuration file located at `~/.pfxposter`. 
+First, create a Mastodon application from the settings of your Mastodon instance. You can create it under "Development" menu in settings. When you have created your app, Mastodon will give you an access token. Write the token to your configurion file.
+
+The configuration file is located at `~/.pfxposter`. 
 ```toml
 updated = 2020-08-21 07:56:48+00:00
 
@@ -19,7 +25,17 @@ pixelfed_url = "https://pixelfed.social"
 username = "ooguz"
 ```
 
-pfxposter reads the configuration file, and runs frequently.
+pfxposter reads the configuration file, and runs frequently. Installation from `pip` should add a crontab entry, you can check it with the command:
+```
+crontab -l
+```
+
+From Mastodon to Twitter, you will need another cross-poster, there are some links below: 
+
+* <https://crossposter.masto.donte.com.br/>
+* <https://moa.party>
+
+**DISCLAIMER: These services listed below are neither maintained or recommended from the developer, these are listed only for general information.**
 
 ## License
 
