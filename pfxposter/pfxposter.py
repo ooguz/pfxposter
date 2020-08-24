@@ -8,8 +8,15 @@ import tempfile
 import toml 
 import os
 
-os_user = os.getenv("USER")
-config_file = "/home/{}/.pfxposter".format(os_user)
+homedir = os.getenv("HOME")
+config_file = "{}/.pfxposter".format(homedir)
+
+if os.path.exists(config_file) == False:
+    conf_includes = 'updated = 2020-08-24 00:00:00+00:00\n\n[mastodon]\nmastodon_url = "https://oyd.social"\naccess_token = "your_access_token_here"\n\n[pixelfed]\npixelfed_url = "https://pixelfed.social"\nusername = "username"'
+    with open(config_file, "w") as f:
+        f.write(conf_includes)
+        print("Configuration file created please edit")
+    os._exit(0)
 
 config = toml.load(config_file)
 

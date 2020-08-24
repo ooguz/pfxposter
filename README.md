@@ -1,12 +1,23 @@
 # pfxposter
 
+![PyPI](https://img.shields.io/pypi/v/pfxposter)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pfxposter)
+![GLWTS](https://img.shields.io/badge/license-GLWTS-success)
+![PyPI - Status](https://img.shields.io/pypi/status/pfxposter)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
+https://img.shields.io/badge/license-GLWTS-success
+![PyPI - Format](https://img.shields.io/pypi/format/pfxposter)
+![GitHub followers](https://img.shields.io/github/followers/ooguz?label=Follow&style=social)
+
 A PixelFed to Mastodon and Twitter crossposter that is not written as intended. Due to the unknown error on pixelfed.social instance, Atom feeds are used for checking new posts. 
 
 In order to post PixelFed entries to Twitter, you will need a Mastodon-Twitter crossposter, you may find them on web.
 
 ## Installation
 
-`pip3 install pfxposter`
+```
+pip3 install pfxposter
+```
 
 ## Usage
 
